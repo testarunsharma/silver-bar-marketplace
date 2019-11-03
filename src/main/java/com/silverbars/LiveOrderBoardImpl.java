@@ -38,18 +38,19 @@ public class LiveOrderBoardImpl implements LiveOrderBoard {
 	private final Comparator<SummaryBuilder> orderSummaryBytypeAndPrice = new OrderCompration();
 	private final List<Order> orderRegistration = new ArrayList<>();
 
-	final static Logger logger = LoggerFactory.getLogger(LiveOrderBoardImpl.class);
+	final static Logger log = LoggerFactory.getLogger(LiveOrderBoardImpl.class);
 
 	/**
 	 * This method will register user order
+	 * add order in order List
 	 *
 	 * @param order
 	 */
 	@Override
 	public void orderRegisteration(Order order) {
-		logger.info("Registering Order intiated : " + order.toString());
+		log.info("Registering Order intiated : " , order);
 		orderRegistration.add(order);
-		logger.info("Order registered successfully ");
+		log.info("Order registered successfully ");
 	}
 
 	/**
@@ -60,7 +61,7 @@ public class LiveOrderBoardImpl implements LiveOrderBoard {
 	 */
 	@Override
 	public List<SummaryBuilder> orderSummarySelection() throws OrderNotException {
-		logger.info("orderSummarySelection  Satrts :");
+		log.info("orderSummarySelection  Satrts :");
 		if (!orderRegistration.isEmpty()) {
 			return orderSummary();
 		} else {
@@ -85,14 +86,14 @@ public class LiveOrderBoardImpl implements LiveOrderBoard {
 	 */
 	@Override
 	public void cancelOrder(Order order) {
-		logger.info("Cancelling Order: " + order.toString());
+		log.info("order cancelation: ", order.toString());
 
-		boolean exists = orderRegistration.contains(order);
-		if (exists) {
+		boolean orderExists = orderRegistration.contains(order);
+		if (orderExists) {
 			orderRegistration.remove(order);
-			logger.info("Order successfully cancelled");
+			log.info("Order successfully cancelled");
 		} else {
-			logger.info("Invalid Order supplied");
+			log.info("Invalid Order supplied");
 		}
 	}
 }

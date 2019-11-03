@@ -5,7 +5,9 @@ import com.silverbars.model.Order;
 import com.silverbars.model.SummaryBuilder;
 
 import java.util.List;
-
+/*
+ * author sharma-ar
+ */
 public interface LiveOrderBoard {
 
     void orderRegisteration(Order order);
