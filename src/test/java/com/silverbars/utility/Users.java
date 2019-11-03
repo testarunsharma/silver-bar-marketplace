@@ -1,4 +1,4 @@
-package com.silverbars.support;
+package com.silverbars.utility;
 
 import com.silverbars.model.UserId;
 

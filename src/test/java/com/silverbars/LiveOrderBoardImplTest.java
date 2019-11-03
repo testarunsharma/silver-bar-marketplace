@@ -1,11 +1,11 @@
 package com.silverbars;
 
-import static com.silverbars.support.OrderTestUtil.buyOrder;
-import static com.silverbars.support.OrderTestUtil.kg;
-import static com.silverbars.support.OrderTestUtil.sellOrder;
-import static com.silverbars.support.OrderTestUtil.£;
-import static com.silverbars.support.Users.Butler;
-import static com.silverbars.support.Users.Tendulkar;
+import static com.silverbars.utility.OrderTestUtil.buyOrder;
+import static com.silverbars.utility.OrderTestUtil.kg;
+import static com.silverbars.utility.OrderTestUtil.sellOrder;
+import static com.silverbars.utility.OrderTestUtil.£;
+import static com.silverbars.utility.Users.Butler;
+import static com.silverbars.utility.Users.Tendulkar;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 import javax.measure.Quantity;

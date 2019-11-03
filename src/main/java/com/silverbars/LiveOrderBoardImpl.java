@@ -30,6 +30,7 @@ import com.silverbars.model.SummaryBuilder;
  * <li>Cancel order</li>
  * <li>Other user not able to Cancel order</li>
  * <li>Display the summary of the order</li>
+ * </ul>
  * @author sharma-ar
  */
 

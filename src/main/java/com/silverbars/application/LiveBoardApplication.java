@@ -1,9 +1,9 @@
 package com.silverbars.application;
 
-import static com.silverbars.support.OrderTestUtil.buyOrder;
-import static com.silverbars.support.OrderTestUtil.kg;
-import static com.silverbars.support.OrderTestUtil.sellOrder;
-import static com.silverbars.support.OrderTestUtil.£;
+import static com.silverbars.utility.OrderTestUtil.buyOrder;
+import static com.silverbars.utility.OrderTestUtil.kg;
+import static com.silverbars.utility.OrderTestUtil.sellOrder;
+import static com.silverbars.utility.OrderTestUtil.£;
 
 import java.util.Scanner;
 

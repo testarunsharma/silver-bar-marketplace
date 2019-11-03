@@ -1,9 +1,9 @@
 package com.silverbars.domain;
 
-import static com.silverbars.support.OrderTestUtil.buyOrder;
-import static com.silverbars.support.OrderTestUtil.kg;
-import static com.silverbars.support.OrderTestUtil.£;
-import static com.silverbars.support.Users.Butler;
+import static com.silverbars.utility.OrderTestUtil.buyOrder;
+import static com.silverbars.utility.OrderTestUtil.kg;
+import static com.silverbars.utility.OrderTestUtil.£;
+import static com.silverbars.utility.Users.Butler;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.groupingBy;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;

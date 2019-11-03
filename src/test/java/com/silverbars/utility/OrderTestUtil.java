@@ -1,4 +1,4 @@
-package com.silverbars.support;
+package com.silverbars.utility;
 
 import static org.joda.money.CurrencyUnit.GBP;
 import static tec.uom.se.unit.Units.KILOGRAM;

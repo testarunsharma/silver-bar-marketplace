@@ -7,11 +7,8 @@ import java.util.Objects;
 
 final public class Order {
 	
-    public OrderType getOrderType() {
-		return orderType;
-	}
 
-	private final UserId userId;
+    private final UserId userId;
     private final Quantity<Mass> quantity;
     private final PricePerKg pricePerKg;
     private final OrderType orderType;
