@@ -4,8 +4,8 @@ import static com.silverbars.utility.OrderTestUtil.buyOrder;
 import static com.silverbars.utility.OrderTestUtil.kg;
 import static com.silverbars.utility.OrderTestUtil.sellOrder;
 import static com.silverbars.utility.OrderTestUtil.£;
-import static com.silverbars.utility.Users.Butler;
-import static com.silverbars.utility.Users.Tendulkar;
+import static com.silverbars.utility.UsersTestUtil.Butler;
+import static com.silverbars.utility.UsersTestUtil.Tendulkar;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 import javax.measure.Quantity;
