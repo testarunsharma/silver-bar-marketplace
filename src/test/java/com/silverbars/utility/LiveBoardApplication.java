@@ -1,4 +1,4 @@
-package com.silverbars.application;
+package com.silverbars.utility;
 
 import static com.silverbars.utility.OrderTestUtil.buyOrder;
 import static com.silverbars.utility.OrderTestUtil.kg;
