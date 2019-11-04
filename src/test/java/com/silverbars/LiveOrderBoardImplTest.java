@@ -15,9 +15,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.silverbars.exception.OrderNotException;
-import com.silverbars.model.SummaryBuilder;
 import com.silverbars.model.OrderType;
 import com.silverbars.model.PricePerKg;
+import com.silverbars.model.SummaryBuilder;
 
 
 public class LiveOrderBoardImplTest {
