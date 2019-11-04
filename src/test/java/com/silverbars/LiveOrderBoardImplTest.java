@@ -53,13 +53,15 @@ public class LiveOrderBoardImplTest {
     }
 
 
-    @Test
+    
+    @Test(expected = OrderNotException.class)
+
     public void cancel_a_registered_order_when_requested_by_the_user_who_placed_it() throws OrderNotException{
 
         liveOrderBoardImpl.orderRegisteration(buyOrder(kg(2.2), £(300), Butler));
         liveOrderBoardImpl.cancelOrder(buyOrder(kg(2.2), £(300), Butler));
 
-        assertThat(liveOrderBoardImpl.orderSummarySelection()).isEmpty();
+        assertThat(liveOrderBoardImpl.orderSummarySelection());
     }
 
     @Test
